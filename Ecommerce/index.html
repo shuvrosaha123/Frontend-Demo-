@@ -11,9 +11,47 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   </head>
   <body>
 
+
+
+    <!-- Top Nav1 -->
+    
+    <nav class="navbar-one flex">
+      <div class="left flex">
+        <div class="email py-3">
+          <i class="fas fa-envelope"></i>
+          <span>fashion@solution.com</span>
+        </div>
+        <div class="call">
+          <i class="fas fa-phone-alt"></i>
+          <span>+880 1936920720</span>
+        </div>
+      </div>
+
+      <div class="right flex">
+        <div class="user">
+          <i class="fas fa-user"></i>         
+           <span>user</span>
+        </div>
+        <div class="facebook">
+          <i class="fab fa-facebook"></i>          
+          <span>facebook</span>
+        </div>
+        <div class="cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span>cart</span>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Top Nav2 -->
+<!-- D-Cart -->
 
   <nav class="navbar navbar-expand-lg">
     <div class="container">
@@ -23,27 +61,28 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       
-
+<!-- Link -->
       
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
+        <!-- Link -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>            
-        <!-- <a href="https://www.facebook.com" class="btn btn-primary"></a>
-        <a href="https://www.twitter.com" class="btn btn-primary"></a>
-        <a href="https://www.linkedin.com" class="btn btn-primary"></a> -->
+          <a class="nav-link" href="#">Link</a> 
         </li>
+        
+
+        <!--  In Stock -->
 
         <li class="nav-item">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
+            In Stock
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">IT support</a></li>
-            <li><a class="dropdown-item" href="#">Web Security</a></li>
-            <li><a class="dropdown-item" href="#">Digital Branding</a></li>
+            <li><a class="dropdown-item" href="#">Men's Product</a></li>
+            <li><a class="dropdown-item" href="#">Women's Product</a></li>
+            <li><a class="dropdown-item" href="#">kid's Product</a></li>
           </ul>
         </li>
         <!-- <li class="nav-item">
@@ -52,6 +91,8 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li> -->
+
+        <!-- About -->
 
         <li class="nav-item">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,6 +105,7 @@
           </ul>
         </li>
 
+<!-- Contact  -->
 
         <li class="nav-item">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,8 +113,8 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">+8801923242691</a></li>
-            <li><a class="dropdown-item" href="#">bmitsolution@gmail.com</a></li>
-            <li><a class="dropdown-item" href="#">//www.linkedin.com/bmit-solutions-limited</a></li>
+            <li><a class="dropdown-item" href="#">fashionsolution@gmail.com</a></li>
+            <li><a class="dropdown-item" href="#">www.linkedin.com/fashion-solution-limited</a></li>
           </ul>
         </li>
 
@@ -80,6 +122,8 @@
           <a class="nav-link" href="#">Contact</a>
         </li> -->
       </ul>
+
+      <!-- Search Button -->
       
     <form class="d-flex" role="search product">
       <input class="px-2 search product" type="search product" placeholder="Search product" aria-label="Search product">
@@ -87,22 +131,49 @@
     </form>
   </nav>
 
+<!-- Slide background -->
 
-    <section class="cover-image">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/handsomecopy.jpg" class="d-block w-100" alt="start">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Fashion.jpg" class="d-block w-100" alt="middle">
+        </div>
+        <div class="carousel-item">
+          <img src="img/main1copy.jpg" class="d-block w-100" alt="end">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+  <!-- Background Image -->
+
+    <!-- <section class="cover-image">
       <div class="img-fluid">
       <img src="img/Fashion.jpg" class="img-fluid" alt="cover">
-
       </div>
-    </section>
+    </section> -->
 
+
+    <!-- Employee & Stock info -->
 
     <section class="main m-auto">
-          <!-- <div class="container py-5">       
-          <div class="row py-4">
-          <div class="col-lg-7 pt-5 text-center">
-            <button class="btn1 mt-6">More...</button>
-            <button class="btn">Submit</button>-->
-
           </div>
         </div>
       </div>
@@ -124,82 +195,234 @@
 
           <div class="col-lg-3">
             <img src="img/partners.png" class="img-fluid" alt="logo">
-            <h6>Our Partners</h6>
+            <a href="#"><h6>Our Partners</h6></a>
           </div>
 
           <div class="col-lg-3">
-            <img src="img/complteproject.png" class="img-fluid" alt="logo">
-            <h6>Complete Project</h6>
+            <img src="img/stock.jpg" class="img-fluid" alt="logo">
+            <a href="#"><h6>Stock</h6></a>
           </div>
 
         </div>
       </div>
     </section>
+    
+
+<!-- Mens Product -->
+    
+    <section class="mens-products">
+      <div class="price py-5">
+        <div class="col-lg-12 text-center">
+          <h3>
+            <i class="fab fa-product-hunt underline">Men's  Products</i>
+        </h3>
+        </div>
+      </div>
+    </section>
 
 
-    <section class="footer py-5">
-      <div class="container text-black py-5">
-        <div class="contact py-5">
-          <div class="row">
-            <!-- Left-side column for contact information -->
-            <div class="col-lg-4">
-              <h2 class="underline text-center">Contact Us</h2>
-              <h6 class="underline">Location</h6>
-              <p>
-                Operation Address:
-                Plot-31, Lake Drive Road,
-                Nikunja-01, Khilkhet,
-                Dhaka-1229.
-              </p>
-              <h6 class="underline">Phone</h6>
-              <p>+88 09639259105, +88 01716462613</p>
-              <h6 class="underline">Email</h6>
-              <p>info@bmitsolutionsltd.com</p>
+    <!-- Mens Product pictures -->
+
+
+      <div class="list">
+        <div class="col-lg-4">
+
+            <div class="col-6">
+                <div class="d-flex flex-row text-center">
+
+              <div class="col-md-12">
+                <img src="img/product-1.jpg" alt="img-fluid" class="img-fluid">
+                <a href="#"><h6>See more collection</h6></a>
+              </div>
+
+              <div class="col-md-12">
+                <img src="img/product-3.jpg" alt="img-fluid" class="img-fluid">
+                <a href="#"><h6>See more collection</h6></a>
+              </div>
+
+              <div class="col-md-12">
+                <img src="img/product-4.jpg" alt="img-fluid" class="img-fluid">
+                <a href="#"><h6>See more collection</h6></a>
+              </div>
+
+              <div class="col-md-12">
+                <img src="img/product-6.jpg" alt="img-fluid" class="img-fluid">
+                <a href="#"><h6>See more collection</h6></a>
+              </div>
+
+              <div class="col-md-12">
+                <img src="img/product-8.jpg" alt="img-fluid" class="img-fluid">
+                <a href="#"><h6>See more collection</h6></a>
+              </div>
+
+              <div class="col-md-12">
+                <img src="img/product-9.jpg" alt="img-fluid" class="img-fluid">
+                <a href="#"><h6>See more collection</h6></a>
+              </div>
             </div>
-            
-            <!-- Right-side column for the form -->
-            <div class="col-lg-8">
-              <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" class="form-control bg-light" placeholder="First Name">
+          </div>
+        </div>
+      </div>
+      
+
+<!-- Womens Product -->
+
+
+      <section class="womens-products">
+        <div class="price py-5">
+          <div class="col-lg-12 text-center">
+            <h3>
+              <i class="fab fa-product-hunt underline">Women's  Products</i>
+          </h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Womens Product pictures -->
+
+        <div class="list">
+          <div class="col-lg-6">
+           <div class="col-6">
+                  <div class="d-flex flex-row text-center">
+
+                <div class="col-md-12">
+                  <img src="img/category-1.jpg" alt="img-fluid" class="img-fluid">
+                  <a href="#"><h6>See more collection</h6></a> 
                 </div>
-                <div class="col-lg-6 ">
-                  <input type="text" class="form-control bg-light" placeholder="Last Name">
+
+                <div class="col-md-12">
+                  <img src="img/category-2.jpg" alt="img-fluid" class="img-fluid">
+                  <a href="#"><h6>See more collection</h6></a>
                 </div>
-                <div class="col-lg-6 py-2">
-                  <input type="email" class="form-control bg-light" placeholder="Email">
+
+                <div class="col-md-12">
+                  <img src="img/category-3.jpg" alt="img-fluid" class="img-fluid">
+                  <a href="#"><h6>See more collection</h6></a>
                 </div>
-                <div class="col-lg-6 py-2">
-                  <input type="tel" class="form-control bg-light" placeholder="Mobile Number">
-                </div>
-                <div class="col-lg-12 py-3">
-                  <textarea name="" class="form-control bg-light" placeholder="Message" cols="10" rows="5"></textarea>
+
+                <div class="col-md-12">
+                  <img src="img/category-2.jpg" alt="img-fluid" class="img-fluid">
+                  <a href="#"><h6>See more collection</h6></a>
                 </div>
               </div>
-              <button class="btn btn-primary text-black backg">Submit</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    
 
 
 
+      <!-- <div class="list">
+        <div class="col-lg-2">
+          <div class="card border-1 bg-light">
+            <div class="row">
+              <div class="col-6">
+            <div class="d-flex flex-row">
+            <img src="img/product-1.jpg" alt="img-fluid" class="img-fluid">
+            <img src="img/product-2.jpg" alt="img-fluid" class="img-fluid"> 
+            <img src="img/product-3.jpg" alt="img-fluid" class="img-fluid">  
+            <img src="img/product-4.jpg" alt="img-fluid" class="img-fluid">  
+            <img src="img/product-5.jpg" alt="img-fluid" class="img-fluid">  
+            <img src="img/product-6.jpg" alt="img-fluid" class="img-fluid">  
+            <img src="img/product-7.jpg" alt="img-fluid" class="img-fluid">  
+            <img src="img/product-8.jpg" alt="img-fluid" class="img-fluid">  
+            <img src="img/product-9.jpg" alt="img-fluid" class="img-fluid">  
+            <img src="img/product-10.jpg" alt="img-fluid" class="img-fluid">  
+            <img src="img/product-11.jpg" alt="img-fluid" class="img-fluid">  
+        </div>
+      </div> 
+      </section>-->
 
+
+      <section class="footer py-5">
+        <div class="container text-black py-5">
+          <div class="contact py-5">
+            <div class="row">
+
+              <!-- Left-side column for contact information -->
+              <div class="contact"><h2 class="underline text-center py-3">Contact Us</h2>
+              </div>
+              <div class="col-lg-4">
+                <h6 class="underline">Location</h6>
+                <p>
+                  Operation Address:
+                  Plot-31, Lake Drive Road,
+                  Nikunja-01, Khilkhet,
+                  Dhaka-1229.
+                </p>
+                <h6 class="underline">Phone</h6>
+                <p>+88 09639259105, +88 01716462613</p>
+                <h6 class="underline">Email</h6>
+                <p>info@bmitsolutionsltd.com</p>
+              </div>
+              
+              <!-- Right-side column for the form -->
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control bg-light" placeholder="First Name">
+                  </div>
+                  <div class="col-lg-6 ">
+                    <input type="text" class="form-control bg-light" placeholder="Last Name">
+                  </div>
+                  <div class="col-lg-6 py-2">
+                    <input type="email" class="form-control bg-light" placeholder="Email">
+                  </div>
+                  <div class="col-lg-6 py-2">
+                    <input type="tel" class="form-control bg-light" placeholder="Mobile Number">
+                  </div>
+                  <div class="col-lg-12 py-3">
+                    <textarea name="" class="form-control bg-light" placeholder="Message" cols="10" rows="5"></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-primary text-black backg">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    <!-- End Submit Butto  -->
     <section class="news">
       <div class="row"></div>
-      <div class="col-lg-6 py-2 text-center">
-        <h1 class="underline">For Join our socity</h1>
-        <input type="text" class="form-control bg-light" placeholder="Enter your Email">
-        <div class="col-lg-6 py-3"></div>
+      <div class="col-lg-12 py-3 text-center">
+        <h2 class="underline">For Join our socity</h2>
+        <input type="text" class="form-control bg-light text-center" placeholder="Enter your Email">
+        <input type="text" class="form-control bg-light text-center" placeholder="Enter your Contact Number">
+        <div class="col-lg-6 py-2"></div>
         <button class="btn btn-primary text-black backg text-center">Submit</button>
-
       </div>
 
+         <div class="foot-right text-end">
+         <a href="#"><i class="fab fa-linkedin"></i></a>  
+          <a href="#"><i class="fab fa-instagram-square"></i></a>         
+         <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
     </section>
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      const sliderContainer = document.querySelector(".slider-container");
+      const slides = document.querySelectorAll(".slide");
+      let currentIndex = 0;
+
+      function nextSlide() {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateSlider();
+      }
+
+      function prevSlide() {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          updateSlider();
+      }
+
+      function updateSlider() {
+          sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+
+      // Automatically advance to the next slide every 5 seconds
+      setInterval(nextSlide, 2000);
+  </script>
   </body>
 </html>
